@@ -1,0 +1,38 @@
+{
+  "name": "tmpayer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Kakajan",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^0.19.2",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-force-ssl": "^0.3.2",
+    "express-validator": "^6.4.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "https": "^1.0.0",
+    "mongoose": "^5.9.13",
+    "request": "^2.88.2",
+    "sha1": "^1.1.1",
+    "sha1-hex": "^1.0.0",
+    "url": "^0.11.0",
+    "yandex-money-sdk": "^0.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.3"
+  }
+}

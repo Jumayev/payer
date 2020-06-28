@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.21092604.chunk.css",
+    "main.js": "/static/js/main.98791575.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.74ab0195.js",
+    "static/js/2.fd9be3e7.chunk.js": "/static/js/2.fd9be3e7.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.3e410eaa389b58a7254260d44f1350eb.js": "/precache-manifest.3e410eaa389b58a7254260d44f1350eb.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.fd9be3e7.chunk.js.LICENSE.txt": "/static/js/2.fd9be3e7.chunk.js.LICENSE.txt",
+    "static/media/tmcell-icon.png": "/static/media/tmcell-icon.4db3f870.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74ab0195.js",
+    "static/js/2.fd9be3e7.chunk.js",
+    "static/css/main.21092604.chunk.css",
+    "static/js/main.98791575.chunk.js"
+  ]
+}

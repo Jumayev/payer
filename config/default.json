@@ -1,0 +1,11 @@
+{
+  "port": 5000,
+  "jwtSecret": "vladilen youtube mern",
+  "mongoUri": "mongodb+srv://insta:insta@cluster0-iqe8g.mongodb.net/insta?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000",
+  "instanceId": "JLt8mgEIgTf/b/q//Xl9mT5CgtHBXFjrLzYfTaGKQ5t8gUfkCeQsAGWd0aRu1Poh",
+  "yaSecret" : "lo5XDbh4P6ixBqT09b6SZzbI",
+  "semySecret" : "dd0540fcff3b1910779d7eefbbd41576",
+  "telegramToken" : "1157207605:AAGa_ypxrxR9sItpcw9LqEAV0OnZtNZ4PyI",
+  "chatId": "-1001120791987"
+}
