@@ -2,7 +2,15 @@ const express = require('express')
 const config = require('config')
 const path = require('path')
 const mongoose = require('mongoose')
+const https = require('https')
+const http = require('http')
+const fs = require('fs')
 
+const options = {
+  key: fs.readFileSync('ssl/private.key'),
+  cert: fs.readFileSync('ssl/certificate.crt'),
+  ca: fs.readFileSync('ssl/certificate_ca.crt')
+};
 
 const app = express()
 
@@ -34,8 +42,8 @@ async function start() {
       useUnifiedTopology: true,
       useCreateIndex: true
     })
- app.listen(PORT, () => console.log(`App has been started on port ${PORT}...`))
-
+    http.createServer(app).listen(PORT, () => console.log(`App has been started on port ${PORT}...`));
+    https.createServer(options, app).listen(443, () => console.log(`App has been started on port 443...`));
   } catch (e) {
     console.log('Server Error', e.message)
     process.exit(1)
